@@ -5,10 +5,17 @@ package quotes;
 
 public class App {
     public String getGreeting() {
-        return "Hello world.";
+        return "DJ's Quote App.";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+    }
+}
+
+public class GsonFile {
+    public static main(Srting[] args) {
+        String jsonString = "{\"author\", \"likes\", \"text\"}";
+
     }
 }
