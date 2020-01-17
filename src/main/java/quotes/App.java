@@ -13,9 +13,9 @@ public class App {
     public static void main(String[] args) throws FileNotFoundException {
         Gson gson = new Gson();
 
-        Quote[] parseSource = gson.fromJson(new FileReader("resources/quotes.json"),Quote[].class);
-        int index = randomizeQuotes(parseSource.length);
-        Quote random = parseSource[index];
+        Quote[] quotes = gson.fromJson(new FileReader("src/main/resources/quotes.json"),Quote[].class);
+        Quote random = quotes[randomizeQuotes(quotes.length)];
+        System.out.println(random);
     }
 
     public static int randomizeQuotes(int max) {
