@@ -42,6 +42,7 @@ public class App {
 
         String data = new BufferedReader(new InputStreamReader(connect.getInputStream())).readLine();
         System.out.println(data);
+        
     }
 }
 
